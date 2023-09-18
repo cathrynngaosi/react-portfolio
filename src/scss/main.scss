@@ -1,0 +1,7 @@
+@use "./abstracts/index" as abstracts;
+@use "./layout/index" as layout;
+
+body {
+  margin: 0;
+  font-family: abstracts.$font-mulish;
+}
