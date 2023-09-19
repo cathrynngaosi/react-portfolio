@@ -2,7 +2,9 @@ function About() {
   return (
     <section id="about">
       <div className="about-container">
-        <div className="about-photo">Picture</div>
+        <div className="about-photo">
+          <img src="public/ImagePlaceholder.png" alt="" />
+        </div>
         <div className="about-text">
           <h1>ABOUT ME</h1>
           <p>

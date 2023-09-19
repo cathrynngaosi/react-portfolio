@@ -3,7 +3,7 @@ import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 function Intro() {
   return (
     <section id="intro">
-      <div className="intro-text">
+      <div className="intro-container">
         <h1>Hey there, I&apos;m Cathryn!</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum autem,

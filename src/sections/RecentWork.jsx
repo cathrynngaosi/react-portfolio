@@ -6,9 +6,15 @@ function RecentWork() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sunt.
       </p>
       <div className="preview-container">
-        <img src="public/ImagePlaceholder.png" alt="" />
-        <img src="public/ImagePlaceholder.png" alt="" />
-        <img src="public/ImagePlaceholder.png" alt="" />
+        <div>
+          <img src="public/ImagePlaceholder.png" alt="" />
+        </div>
+        <div>
+          <img src="public/ImagePlaceholder.png" alt="" />
+        </div>
+        <div>
+          <img src="public/ImagePlaceholder.png" alt="" />
+        </div>
       </div>
     </section>
   );

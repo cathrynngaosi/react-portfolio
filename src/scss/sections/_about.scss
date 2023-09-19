@@ -1,7 +1,28 @@
 @use "../abstracts/index" as *;
 
 #about {
-  background-color: $color-secondary;
+  position: relative;
+  background-color: $color-primary;
+  &::before {
+    clip-path: polygon(0 0%, -9% -2%, 107% -102%, -10% 75%, -8% 147%);
+    background: white;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    content: "";
+    height: 190px;
+    width: 100%;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    background: $color-primary;
+    height: 190px;
+    width: 100%;
+
+    clip-path: polygon(0px 170%, 108% 30%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 .about-container {

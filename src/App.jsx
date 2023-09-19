@@ -6,6 +6,7 @@ import TechStack from "./sections/TechStack";
 import WorkExperience from "./sections/WorkExperience";
 import RecentWork from "./sections/RecentWork";
 import Contact from "./sections/Contact";
+import Copyright from "./sections/Copyright";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <WorkExperience />
       <RecentWork />
       <Contact />
+      <Copyright />
     </>
   );
 }

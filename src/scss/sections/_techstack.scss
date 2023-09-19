@@ -1,17 +1,47 @@
 @use "../abstracts/index" as *;
 
 #tech-stack {
+  position: relative;
   padding: 2rem 5rem 4rem;
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 108% 0%, 160% 83%, 0 17%);
+    background-color: #e9dad7;
+  }
+}
+
+.tech-container {
+  background-color: $color-white;
+  padding: 1.5rem;
+  h1 {
+    text-align: center;
+  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   height: 78%;
+  //   top: 37px;
+  //   left: 75px;
+  //   width: 89.5%;
+  //   border: 2px solid $color-black;
+  //   transform: rotate(-1.1deg);
+  // }
 }
 
 .all-tech-container {
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
-  gap: 3rem 0;
 
   .tech-container {
     text-align: center;
@@ -21,6 +51,9 @@
 
     .icon-label {
       margin: 0;
+    }
+    img {
+      width: 3rem;
     }
   }
 }

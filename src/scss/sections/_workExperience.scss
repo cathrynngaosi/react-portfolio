@@ -1,10 +1,19 @@
 @use "../abstracts/index" as *;
 
 #work-experience {
+  background-color: $color-secondary;
+  color: $color-white;
+  margin-top: -9rem;
+  padding: 9rem 5rem 5rem;
+
   .work-exp-container {
     display: flex;
     align-items: center;
 
+    .section-label {
+      width: 30%;
+      text-transform: uppercase;
+    }
     .section-content {
       flex: 1;
     }

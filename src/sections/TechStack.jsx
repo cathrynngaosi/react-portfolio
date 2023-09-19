@@ -22,7 +22,7 @@ function TechStack() {
     { label: "HTML5", icon: <FaHtml5 /> },
     { label: "CSS", icon: <FaCss3Alt /> },
     { label: "Javascript", icon: <SiJavascript /> },
-    { label: "C#", icon: <FaHtml5 /> },
+    { label: "C#", icon: <img src="public/c.png" /> },
     { label: "PHP", icon: <BiLogoPhp /> },
     { label: "jQuery", icon: <SiJquery /> },
     { label: "ReactJS", icon: <RiReactjsFill /> },
@@ -38,16 +38,18 @@ function TechStack() {
 
   return (
     <section id="tech-stack">
-      <h1>My Tech Stack</h1>
-      <div className="all-tech-container">
-        {techLabels.map((tech) => {
-          return (
-            <div className="tech-container" key={tech.label}>
-              <span className="icon">{tech.icon}</span>
-              <p className="icon-label">{tech.label}</p>
-            </div>
-          );
-        })}
+      <div className="tech-container">
+        <h1>My Tech Stack</h1>
+        <div className="all-tech-container">
+          {techLabels.map((tech) => {
+            return (
+              <div className="tech-container" key={tech.label}>
+                <span className="icon">{tech.icon}</span>
+                <p className="icon-label">{tech.label}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

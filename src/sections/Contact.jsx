@@ -4,23 +4,23 @@ import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 function Contact() {
   return (
     <section id="contact">
+      <h1>Get In Touch</h1>
       <div className="contact-container">
-        <h1>Get In Touch</h1>
-        <div>
-          <p>
-            <span>
-              <MdOutlineMail />
-            </span>
-            cathrynngaosi@gmail.com
-          </p>
+        <div className="contact">
+          <MdOutlineMail />
+          <a href="mailto:cathrynngaosi@gmail.com">cathrynngaosi@gmail.com</a>
         </div>
-        <div className="icons-container">
-          <span>
-            <FaSquareGithub />
-          </span>
-          <span>
-            <FaLinkedin />
-          </span>
+        <div className="contact">
+          <FaLinkedin />
+          <a href="https://www.linkedin.com/in/cathrynngaosi/">
+            cathrynngaosi@gmail.com
+          </a>
+        </div>
+        <div className="contact">
+          <FaSquareGithub />
+          <a href="https://github.com/cathrynngaosi">
+            github.com/cathrynngaosi
+          </a>
         </div>
       </div>
     </section>

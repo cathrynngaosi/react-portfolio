@@ -2,21 +2,37 @@
 @use "../components/index" as *;
 
 #intro {
-  height: 50vh;
-  text-align: center;
-}
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    background: $color-primary;
+    height: 190px;
+    width: 100%;
+    clip-path: polygon(100% 2%, 39.25% 100%, 100% 100%);
+  }
 
-.intro-text {
-  line-height: 1.5rem;
-  padding: 5rem 10rem;
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    padding: 7rem;
 
-  .icons-container {
-    margin-top: 1rem;
-    font-size: 1.8rem;
+    p {
+      text-align: center;
+    }
 
-    span {
-      cursor: pointer;
-      margin: 0 2px;
+    .icons-container {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+
+      span {
+        cursor: pointer;
+        margin: 0 2px;
+      }
     }
   }
 }
