@@ -1,0 +1,32 @@
+@use "../abstracts/index" as *;
+
+#about {
+  background-color: $color-secondary;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 10rem;
+
+  .about-photo {
+    width: 45%;
+  }
+
+  .about-text {
+    width: 55%;
+    line-height: 1.5rem;
+    padding: 0 2.5rem;
+
+    .icons-container {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+
+      span {
+        cursor: pointer;
+        margin: 0 2px;
+      }
+    }
+  }
+}
