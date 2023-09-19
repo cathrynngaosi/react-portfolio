@@ -1,0 +1,22 @@
+@use "../abstracts/index" as *;
+@use "../components/index" as *;
+
+#intro {
+  height: 50vh;
+  text-align: center;
+}
+
+.intro-text {
+  line-height: 1.5rem;
+  padding: 5rem 10rem;
+
+  .icons-container {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+
+    span {
+      cursor: pointer;
+      margin: 0 2px;
+    }
+  }
+}
