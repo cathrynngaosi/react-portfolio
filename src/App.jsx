@@ -2,6 +2,7 @@ import "./scss/main.scss";
 import Navbar from "./layout/Navbar";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
+import TechStack from "./sections/TechStack";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Intro />
       <About />
+      <TechStack />
     </>
   );
 }

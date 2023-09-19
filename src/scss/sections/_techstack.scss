@@ -1,0 +1,26 @@
+@use "../abstracts/index" as *;
+
+#tech-stack {
+  padding: 2rem 5rem 4rem;
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}
+
+.all-tech-container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 3rem 0;
+
+  .tech-container {
+    text-align: center;
+    .icon {
+      font-size: 3rem;
+    }
+
+    .icon-label {
+      margin: 0;
+    }
+  }
+}
