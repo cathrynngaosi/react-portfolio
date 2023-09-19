@@ -1,0 +1,28 @@
+@use "../abstracts/index" as *;
+
+#work-experience {
+  .work-exp-container {
+    display: flex;
+    align-items: center;
+
+    .section-content {
+      flex: 1;
+    }
+  }
+
+  .company-exp {
+    margin: 1.5rem;
+    line-height: 8px;
+
+    h3 {
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .exp-container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: 0;
+    }
+  }
+}
