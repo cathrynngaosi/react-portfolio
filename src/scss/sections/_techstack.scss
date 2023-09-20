@@ -3,9 +3,9 @@
 #tech-stack {
   position: relative;
   padding: 2rem 5rem 4rem;
+
   h1 {
     text-transform: uppercase;
-    margin-bottom: 2rem;
   }
 
   &::before {
@@ -40,11 +40,14 @@
 }
 
 .all-tech-container {
-  display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   .tech-container {
     text-align: center;
+    flex: 0 0 calc(9% - 15px);
+
     .icon {
       font-size: 3rem;
     }
