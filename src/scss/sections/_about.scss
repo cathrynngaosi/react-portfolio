@@ -29,7 +29,11 @@
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 5rem 10rem;
+  padding: 4rem 5rem;
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
 
   .about-photo {
     width: 45%;
@@ -38,7 +42,12 @@
   .about-text {
     width: 55%;
     line-height: 1.5rem;
-    padding: 0 2.5rem;
+
+    .about-intro {
+      font-size: smaller;
+      font-style: italic;
+      margin: 0;
+    }
 
     .icons-container {
       margin-top: 1rem;

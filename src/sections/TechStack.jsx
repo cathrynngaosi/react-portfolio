@@ -1,9 +1,11 @@
 import {
+  FaAws,
   FaBootstrap,
   FaCss3Alt,
   FaFigma,
   FaHtml5,
   FaNodeJs,
+  FaNpm,
   FaSass,
 } from "react-icons/fa6";
 import {
@@ -24,12 +26,14 @@ function TechStack() {
     { label: "Javascript", icon: <SiJavascript /> },
     { label: "ReactJS", icon: <RiReactjsFill /> },
     { label: "Node.js", icon: <FaNodeJs /> },
+    { label: "npm", icon: <FaNpm /> },
     { label: "jQuery", icon: <SiJquery /> },
     { label: "C#", icon: <img src="public/c.png" /> },
     { label: "PHP", icon: <BiLogoPhp /> },
     { label: "Bootstrap", icon: <FaBootstrap /> },
     { label: "TailwindCSS", icon: <SiTailwindcss /> },
     { label: "Sass", icon: <FaSass /> },
+    { label: "AWS", icon: <FaAws /> },
     { label: "SQL", icon: <SiMysql /> },
     { label: "Supabase", icon: <SiSupabase /> },
     { label: "Figma", icon: <FaFigma /> },

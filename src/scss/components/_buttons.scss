@@ -1,10 +1,34 @@
 @use "../abstracts/index" as *;
 
 .btn {
-  background-color: transparent;
-  border: 1px solid;
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
   font-family: $font-montserrat;
   cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $color-primary-darker;
+  border: 1px solid $color-primary-darker;
+  color: white;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
+    color: white;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-secondary;
+  border: 1px solid $color-secondary;
+  color: white;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $color-primary-darker;
+    border: 1px solid $color-primary-darker;
+    color: white;
+  }
 }

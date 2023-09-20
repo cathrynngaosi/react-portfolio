@@ -28,7 +28,7 @@ function WorkExperience() {
               </ul>
             </div>
             <div className="skills">
-              <p>HTML, CSS, JavaScript, C#, MySQL,</p>
+              <p>HTML, CSS, JavaScript, C#, MySQL, AWS</p>
             </div>
           </div>
 

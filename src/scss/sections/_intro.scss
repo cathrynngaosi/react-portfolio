@@ -21,8 +21,16 @@
     line-height: 1.5rem;
     padding: 7rem;
 
+    h1 {
+      margin-bottom: 0;
+    }
+
     p {
       text-align: center;
+    }
+
+    button {
+      margin: 0 0.2rem;
     }
 
     .icons-container {
@@ -32,6 +40,18 @@
       span {
         cursor: pointer;
         margin: 0 2px;
+      }
+      svg {
+        color: $color-secondary;
+        transition: all 0.25s ease;
+
+        &:visited {
+          color: $color-secondary;
+        }
+
+        &:hover {
+          color: $color-primary-darker;
+        }
       }
     }
   }

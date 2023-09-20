@@ -3,8 +3,8 @@
 #work-experience {
   background-color: $color-secondary;
   color: $color-white;
-  margin-top: -9rem;
-  padding: 7rem 5rem 4rem;
+  margin-top: -11rem;
+  padding: 9rem 5rem 4rem;
 
   .work-exp-container {
     display: flex;
@@ -27,6 +27,7 @@
     }
     p {
       margin: 0.5rem 0;
+      font-weight: 100;
     }
   }
 
@@ -36,6 +37,14 @@
       margin-bottom: 1.5rem;
       p {
         margin: 0.3rem;
+      }
+      p:first-child {
+        font-weight: bold;
+      }
+
+      p:nth-child(2) {
+        font-size: smaller;
+        font-weight: 100;
       }
     }
   }
