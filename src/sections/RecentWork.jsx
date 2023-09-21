@@ -1,6 +1,6 @@
-function RecentWork() {
+function RecentWork({ portfolioRef }) {
   return (
-    <section id="recent-works">
+    <section id="recent-works" ref={portfolioRef}>
       <h1>My Recent Work</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sunt.

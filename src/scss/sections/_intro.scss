@@ -14,10 +14,8 @@
   }
 
   .intro-container {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     line-height: 1.5rem;
     padding: 7rem;
 

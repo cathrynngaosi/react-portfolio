@@ -1,5 +1,4 @@
 @use "../abstracts/index" as *;
-@use "../abstracts/mixins" as *;
 
 #scrollToTop {
   @include flex-center;

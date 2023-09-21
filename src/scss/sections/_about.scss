@@ -26,8 +26,8 @@
 }
 
 .about-container {
-  display: flex;
-  align-items: center;
+  @include flex-center;
+
   text-align: center;
   padding: 4rem 5rem;
 

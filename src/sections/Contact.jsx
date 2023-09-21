@@ -1,9 +1,9 @@
 import { MdOutlineMail } from "react-icons/md";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 
-function Contact() {
+function Contact({ contactRef }) {
   return (
-    <section id="contact">
+    <section id="contact" ref={contactRef}>
       <h1>Get In Touch</h1>
       <div className="contact-container">
         <div className="contact">

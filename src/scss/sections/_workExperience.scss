@@ -7,8 +7,7 @@
   padding: 9rem 5rem 4rem;
 
   .work-exp-container {
-    display: flex;
-    align-items: center;
+    @include flex-center;
 
     .section-label {
       width: 30%;

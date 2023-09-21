@@ -1,0 +1,41 @@
+@use "../abstracts/index" as *;
+
+#footer {
+  background-color: $color-white;
+  font-size: smaller;
+  font-weight: 200;
+  padding: 1rem;
+
+  .links-container {
+    @include flex-center;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      margin: 0 0.5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: $color-black;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary-darker;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .copyright-container {
+    @include flex-center;
+
+    p {
+      margin: 0.5rem;
+    }
+  }
+
+  svg {
+    font-size: x-small;
+    margin: 0 2px;
+  }
+}

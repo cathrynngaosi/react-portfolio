@@ -40,13 +40,13 @@
 }
 
 .all-tech-container {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
+
   flex-wrap: wrap;
 
   .tech-container {
     text-align: center;
-    flex: 0 0 calc(8% - 20px);
+    flex: 0 0 calc(9% - 12px);
 
     .icon {
       font-size: 3rem;

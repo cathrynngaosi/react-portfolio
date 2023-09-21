@@ -2,6 +2,9 @@
 @use "./layout/index" as layout;
 @use "./sections/index" as sections;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: abstracts.$font-mulish;

@@ -1,6 +1,6 @@
-function About() {
+function About({ aboutRef }) {
   return (
-    <section id="about">
+    <section id="about" ref={aboutRef}>
       <div className="about-container">
         <div className="about-photo">
           <img src="public/ImagePlaceholder.png" alt="" />
@@ -19,9 +19,8 @@ function About() {
             determined to grow and enhance my skills further.
           </p>
           <p>
-            and trying new places to eat as an avid foodie When I&apos;m not
-            glued to my laptop, you can find me in cafes, crafting with my
-            Cricut, and exploring new places to eat as an avid foodie. I love
+            When I&apos;m not glued to my laptop, you can find me in cafes,
+            crafting, or exploring new places to eat as an avid foodie. I love
             exploring new places whenever I have the chance to travel, attending
             live concerts, and making countless memories with my family (🐶
             counted!) and friends.

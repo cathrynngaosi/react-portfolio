@@ -1,6 +1,6 @@
-function WorkExperience() {
+function WorkExperience({ workExpRef }) {
   return (
-    <section id="work-experience">
+    <section id="work-experience" ref={workExpRef}>
       <div className="work-exp-container">
         <div className="section-label">
           <h1>My Work Experience</h1>
