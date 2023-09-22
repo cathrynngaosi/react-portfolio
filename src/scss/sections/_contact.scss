@@ -12,6 +12,7 @@
 
 .contact-container {
   @include flex-center;
+  flex-wrap: wrap;
 
   .contact {
     display: flex;

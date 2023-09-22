@@ -4,13 +4,14 @@
   background-color: $color-secondary;
   color: $color-white;
   margin-top: -11rem;
-  padding: 9rem 5rem 4rem;
+  padding: 9rem 2rem 4rem;
 
   .work-exp-container {
     @include flex-center;
+    flex-direction: column;
 
     .section-label {
-      width: 30%;
+      flex: 0 0 30%;
       text-transform: uppercase;
     }
 
@@ -18,11 +19,17 @@
       flex: 1;
       margin: 0;
     }
+
+    @include lg {
+      flex-direction: row;
+      padding: 7rem 2rem 0rem;
+    }
   }
 
   .company {
     h3 {
       margin-bottom: 0.5rem;
+      line-height: 2rem;
     }
     p {
       margin: 0.5rem 0;
@@ -30,8 +37,26 @@
     }
   }
 
+  .exp-container {
+    display: block;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid pink;
+    }
+
+    @include lg {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 2fr));
+      margin: 1rem 0;
+      text-align: left;
+    }
+  }
+
   ul {
     list-style: none;
+    padding: 0;
+
     li {
       margin-bottom: 1.5rem;
       p {
@@ -46,15 +71,17 @@
         font-weight: 100;
       }
     }
+
+    @include lg {
+      padding: 0 0.5rem;
+    }
   }
 
-  .exp-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 2fr));
-    margin: 1rem 0;
+  @include md {
+    padding: 8.5rem 2.5rem 3rem;
+  }
 
-    &:not(:last-child) {
-      border-bottom: 1px solid pink;
-    }
+  @include lg {
+    padding: 2rem 2.5rem 3rem;
   }
 }

@@ -13,34 +13,24 @@
     height: 190px;
     width: 100%;
   }
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -1px;
-    background: $color-primary;
-    height: 190px;
-    width: 100%;
-
-    clip-path: polygon(0px 170%, 108% 30%, 100% 0%, 100% 100%, 0% 100%);
-  }
 }
 
 .about-container {
   @include flex-center;
-
   text-align: center;
-  padding: 4rem 5rem;
+  flex-direction: column;
+  padding: 2rem 3rem;
 
   h1 {
     margin-bottom: 0.5rem;
   }
 
   .about-photo {
-    width: 45%;
+    flex: 0 0 45%;
   }
 
   .about-text {
-    width: 55%;
+    flex: 1;
     line-height: 1.5rem;
 
     .about-intro {
@@ -58,5 +48,10 @@
         margin: 0 2px;
       }
     }
+  }
+
+  @include lg {
+    flex-direction: row;
+    padding: 5rem 5rem 3rem;
   }
 }
