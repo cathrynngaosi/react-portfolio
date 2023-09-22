@@ -6,23 +6,15 @@
   font-weight: 200;
   padding: 1rem;
 
-  .links-container {
+  ul {
     @include flex-center;
     list-style-type: none;
     margin: 0;
 
     li {
-      margin: 0 0.5rem;
+      @include li-styles;
       text-transform: uppercase;
       font-weight: 300;
-      color: $color-black;
-      text-decoration: none;
-      cursor: pointer;
-
-      &:hover {
-        color: $color-primary-darker;
-        transition: 0.3s;
-      }
     }
   }
 

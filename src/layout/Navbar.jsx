@@ -1,25 +1,24 @@
-function Navbar({
-  aboutRef,
-  techStackRef,
-  workExpRef,
-  portfolioRef,
-  contactRef,
-}) {
-  function handleScroll(ref) {
-    ref.current.scrollIntoView();
+import HamburgerBtn from "../components/HamburgerBtn";
+import useStickyNav from "../hooks/useStickyNav";
+import useToggleMobileNav from "../hooks/useToggleMobileNav";
+
+function Navbar({ children }) {
+  const { menuIsOpen, setMenuIsOpen } = useToggleMobileNav();
+  const { stickyNav } = useStickyNav();
+
+  function handleScrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
-    <nav>
+    <nav id="navbar" className={`${stickyNav && "is-sticky"}`}>
       <div className="navbar-wrapper">
-        <img src="public/CNLogo.svg" alt="logo" />
-        <ul>
-          <li onClick={() => handleScroll(aboutRef)}>About</li>
-          <li onClick={() => handleScroll(techStackRef)}>Tech Stack</li>
-          <li onClick={() => handleScroll(workExpRef)}>Experience</li>
-          <li onClick={() => handleScroll(portfolioRef)}>Portfolio</li>
-          <li onClick={() => handleScroll(contactRef)}>Contact</li>
-        </ul>
+        <img src="public/CNLogo.svg" alt="logo" onClick={handleScrollToTop} />
+        {children}
+        <HamburgerBtn
+          menuIsOpen={menuIsOpen}
+          onClick={() => setMenuIsOpen((isOpen) => !isOpen)}
+        />
       </div>
     </nav>
   );

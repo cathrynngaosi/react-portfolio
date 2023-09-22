@@ -1,5 +1,8 @@
 import "./scss/main.scss";
+import { useRef } from "react";
 import Navbar from "./layout/Navbar";
+import MobileMenu from "./components/MobileMenu";
+import NavLinks from "./components/NavLinks";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
 import TechStack from "./sections/TechStack";
@@ -8,7 +11,6 @@ import RecentWork from "./sections/RecentWork";
 import Contact from "./sections/Contact";
 import Footer from "./layout/Footer";
 import ScrollToTopBtn from "./components/ScrollToTopBtn";
-import { useRef } from "react";
 
 function App() {
   const aboutRef = useRef(null);
@@ -19,13 +21,25 @@ function App() {
 
   return (
     <>
-      <Navbar
-        aboutRef={aboutRef}
-        techStackRef={techStackRef}
-        workExpRef={workExpRef}
-        portfolioRef={portfolioRef}
-        contactRef={contactRef}
-      />
+      <Navbar>
+        <NavLinks
+          aboutRef={aboutRef}
+          techStackRef={techStackRef}
+          workExpRef={workExpRef}
+          portfolioRef={portfolioRef}
+          contactRef={contactRef}
+        />
+      </Navbar>
+
+      <MobileMenu>
+        <NavLinks
+          aboutRef={aboutRef}
+          techStackRef={techStackRef}
+          workExpRef={workExpRef}
+          portfolioRef={portfolioRef}
+          contactRef={contactRef}
+        />
+      </MobileMenu>
 
       <Intro />
       <About aboutRef={aboutRef} />
@@ -34,13 +48,15 @@ function App() {
       <RecentWork portfolioRef={portfolioRef} />
       <Contact contactRef={contactRef} />
 
-      <Footer
-        aboutRef={aboutRef}
-        techStackRef={techStackRef}
-        workExpRef={workExpRef}
-        portfolioRef={portfolioRef}
-        contactRef={contactRef}
-      />
+      <Footer>
+        <NavLinks
+          aboutRef={aboutRef}
+          techStackRef={techStackRef}
+          workExpRef={workExpRef}
+          portfolioRef={portfolioRef}
+          contactRef={contactRef}
+        />
+      </Footer>
 
       <ScrollToTopBtn />
     </>

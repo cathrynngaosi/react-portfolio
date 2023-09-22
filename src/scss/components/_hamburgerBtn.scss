@@ -1,0 +1,68 @@
+@use "../abstracts/index" as *;
+
+/* HAMBURGER MENU */
+#mobileNav {
+  display: block;
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all 0.25s;
+    position: relative;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2.5px;
+    top: 0;
+    left: 0;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+
+  .hamburger-bottom {
+    transform: translateY(14px);
+    background: #000;
+  }
+
+  .open {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    transform: rotate(90deg);
+    transform: translateY(0px);
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    .hamburger-top {
+      transform: rotate(45deg) translateY(6px) translateX(6px);
+    }
+
+    .hamburger-middle {
+      display: none;
+    }
+
+    .hamburger-bottom {
+      transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    }
+  }
+
+  @include md {
+    display: none;
+  }
+}

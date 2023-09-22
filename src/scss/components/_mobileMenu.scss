@@ -1,0 +1,51 @@
+@use "../abstracts/index" as *;
+
+#mobileMenu {
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  left: 0;
+  top: 0;
+
+  &.open {
+    position: fixed;
+    background: #fcfaf8;
+    font-family: "Montserrat", serif;
+    opacity: 95%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    padding-top: 4rem;
+  }
+
+  &.close {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem;
+
+    li {
+      padding: 1rem;
+      border-bottom: 1px solid $color-primary;
+      text-align: center;
+      color: #5f5858;
+
+      &:hover {
+        color: $color-primary-darker;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  @include md {
+    opacity: 0;
+    display: none;
+  }
+}
