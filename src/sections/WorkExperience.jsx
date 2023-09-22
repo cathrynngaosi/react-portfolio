@@ -1,7 +1,11 @@
 function WorkExperience({ workExpRef }) {
   return (
     <section id="work-experience" ref={workExpRef}>
-      <div className="work-exp-container">
+      <div
+        className="work-exp-container"
+        data-aos="fade-right"
+        data-aos-duration="700"
+      >
         <div className="section-label">
           <h1>My Work Experience</h1>
         </div>

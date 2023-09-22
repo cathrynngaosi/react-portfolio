@@ -1,7 +1,11 @@
 function About({ aboutRef }) {
   return (
     <section id="about" ref={aboutRef}>
-      <div className="about-container">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="900"
+        className="about-container"
+      >
         <div className="about-photo">
           <img src="public/ImagePlaceholder.png" alt="" />
         </div>

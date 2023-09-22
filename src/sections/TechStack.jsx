@@ -38,7 +38,11 @@ function TechStack({ techStackRef }) {
 
   return (
     <section id="tech-stack" ref={techStackRef}>
-      <div className="tech-container">
+      <div
+        className="tech-container"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
         <h1>My Tech Stack</h1>
         <div className="all-tech-container">
           {techLabels.map((tech) => {

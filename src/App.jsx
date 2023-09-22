@@ -1,4 +1,7 @@
 import "./scss/main.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { useRef } from "react";
 import Navbar from "./layout/Navbar";
 import MobileMenu from "./components/MobileMenu";
@@ -11,6 +14,8 @@ import RecentWork from "./sections/RecentWork";
 import Contact from "./sections/Contact";
 import Footer from "./layout/Footer";
 import ScrollToTopBtn from "./components/ScrollToTopBtn";
+
+AOS.init();
 
 function App() {
   const aboutRef = useRef(null);
