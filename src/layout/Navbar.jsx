@@ -13,7 +13,7 @@ function Navbar({ children }) {
   return (
     <nav id="navbar" className={`${stickyNav && "is-sticky"}`}>
       <div className="navbar-wrapper">
-        <img src="public/CNLogo.svg" alt="logo" onClick={handleScrollToTop} />
+        <img src="/public/CNLogo.svg" alt="logo" onClick={handleScrollToTop} />
         {children}
         <HamburgerBtn
           menuIsOpen={menuIsOpen}
