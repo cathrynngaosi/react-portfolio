@@ -11,7 +11,7 @@ function RecentWork({ portfolioRef }) {
     >
       <div className="works-header">
         <h1>My Recent Work</h1>
-        <p>Learning and leveling up, one project at a time 👩🏻‍💻</p>
+        <p>Learning and leveling up, one git commit at a time 👩🏻‍💻</p>
       </div>
       <div className="works-container">
         {projects.map(({ title, description, thumbnail, tech, links }, num) => {

@@ -12,13 +12,21 @@ function Contact({ contactRef }) {
         </div>
         <div className="contact">
           <FaLinkedin />
-          <a href="https://www.linkedin.com/in/cathrynngaosi/">
+          <a
+            href="https://www.linkedin.com/in/cathrynngaosi/"
+            target="_blank"
+            rel="noreferrer"
+          >
             cathrynngaosi@gmail.com
           </a>
         </div>
         <div className="contact">
           <FaSquareGithub />
-          <a href="https://github.com/cathrynngaosi">
+          <a
+            href="https://github.com/cathrynngaosi"
+            target="_blank"
+            rel="noreferrer"
+          >
             github.com/cathrynngaosi
           </a>
         </div>

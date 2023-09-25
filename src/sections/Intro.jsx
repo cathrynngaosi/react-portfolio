@@ -25,10 +25,18 @@ function Intro() {
           <button className="btn btn-secondary">View Resume</button>
         </div>
         <div className="icons-container">
-          <a href="https://github.com/cathrynngaosi">
+          <a
+            href="https://github.com/cathrynngaosi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaSquareGithub />
           </a>
-          <a href="https://www.linkedin.com/in/cathrynngaosi/">
+          <a
+            href="https://www.linkedin.com/in/cathrynngaosi/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
         </div>

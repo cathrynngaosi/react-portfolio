@@ -50,7 +50,7 @@ export const projects = [
     tech: ["React", "Sass"],
     links: [
       {
-        link: "https://github.com/cathrynngaosi/popcorn-archives",
+        link: "https://github.com/cathrynngaosi/react-portfolio",
         linkTitle: "Github",
         linkClass: "github",
       },
