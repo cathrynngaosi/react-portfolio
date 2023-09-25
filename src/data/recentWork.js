@@ -1,9 +1,11 @@
+import EMCover from "/public/EM-Cover.png";
+
 export const projects = [
   {
     title: "etherealmindsph Website",
     description:
       "The website offers a user interface for browsing, personalizing designs for each item, and adding items to the shopping cart.",
-    thumbnail: "public/EM-Cover.png",
+    thumbnail: EMCover,
     tech: ["React", "Redux", "Tailwind CSS"],
     links: [
       {
