@@ -1,6 +1,7 @@
 import HamburgerBtn from "../components/HamburgerBtn";
 import useStickyNav from "../hooks/useStickyNav";
 import useToggleMobileNav from "../hooks/useToggleMobileNav";
+import CNLogo from "/public/CNLogo.svg";
 
 function Navbar({ children }) {
   const { menuIsOpen, setMenuIsOpen } = useToggleMobileNav();
@@ -13,7 +14,7 @@ function Navbar({ children }) {
   return (
     <nav id="navbar" className={`${stickyNav && "is-sticky"}`}>
       <div className="navbar-wrapper">
-        <img src="/public/CNLogo.svg" alt="logo" onClick={handleScrollToTop} />
+        <img src={CNLogo} alt="logo" onClick={handleScrollToTop} />
         {children}
         <HamburgerBtn
           menuIsOpen={menuIsOpen}

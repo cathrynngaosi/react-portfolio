@@ -1,4 +1,6 @@
 import EMCover from "/public/EM-Cover.png";
+import PACover from "/public/PA-Cover.png";
+import CNCover from "/public/CN-Cover.png";
 
 export const projects = [
   {
@@ -29,7 +31,7 @@ export const projects = [
     title: "Popcorn Archives",
     description:
       "Popcorn Archives allows users to search for different movies and series and add them to two list categories: favorites and bucket list. All data is fetched with the OMDB API",
-    thumbnail: "public/PA-Cover.png",
+    thumbnail: PACover,
     tech: ["React", "Tailwind CSS"],
     links: [
       {
@@ -48,7 +50,7 @@ export const projects = [
     title: "My React Portfolio Website",
     description:
       "Get to know me a little with my portfolio website. My tech stack, work experience, and a couple of projects I've created to practice coding included!",
-    thumbnail: "public/CN-Cover.png",
+    thumbnail: CNCover,
     tech: ["React", "Sass"],
     links: [
       {

@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPhp } from "react-icons/bi";
 import { RiReactjsFill } from "react-icons/ri";
+import CSharp from "/public/c.png";
 
 function TechStack({ techStackRef }) {
   const techLabels = [
@@ -25,7 +26,7 @@ function TechStack({ techStackRef }) {
     { label: "ReactJS", icon: <RiReactjsFill /> },
     { label: "Node.js", icon: <FaNodeJs /> },
     { label: "jQuery", icon: <SiJquery /> },
-    { label: "C#", icon: <img src="public/c.png" /> },
+    { label: "C#", icon: <img src={CSharp} /> },
     { label: "PHP", icon: <BiLogoPhp /> },
     { label: "Bootstrap", icon: <FaBootstrap /> },
     { label: "TailwindCSS", icon: <SiTailwindcss /> },
