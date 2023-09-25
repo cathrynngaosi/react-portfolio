@@ -1,20 +1,28 @@
 @use "../abstracts/index" as *;
 
 #recent-works {
-  padding: 2rem 2rem 4rem;
+  background-color: $color-white;
+  padding: 2rem 2rem;
 
-  h1 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0.5rem;
+  .works-header {
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+    }
+
+    p {
+      text-align: center;
+    }
   }
-
-  p {
-    text-align: center;
-  }
-
-  .preview-container {
+  .works-container {
     @include flex-center;
     flex-wrap: wrap;
+    gap: 1rem 1rem;
+    margin: 1.5rem auto;
+
+    @include xl {
+      max-width: 75%;
+    }
   }
 }

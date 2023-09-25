@@ -1,3 +1,6 @@
+import Project from "../components/Project";
+import { projects } from "../data/recentWork";
+
 function RecentWork({ portfolioRef }) {
   return (
     <section
@@ -6,20 +9,24 @@ function RecentWork({ portfolioRef }) {
       data-aos="fade-up"
       data-aos-duration="700"
     >
-      <h1>My Recent Work</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sunt.
-      </p>
-      <div className="preview-container">
-        <div>
-          <img src="public/ImagePlaceholder.png" alt="" />
-        </div>
-        <div>
-          <img src="public/ImagePlaceholder.png" alt="" />
-        </div>
-        <div>
-          <img src="public/ImagePlaceholder.png" alt="" />
-        </div>
+      <div className="works-header">
+        <h1>My Recent Work</h1>
+        <p>Learning and leveling up, one project at a time 👩🏻‍💻</p>
+      </div>
+      <div className="works-container">
+        {projects.map(({ title, description, thumbnail, tech, links }, num) => {
+          return (
+            <Project
+              title={title}
+              key={title}
+              description={description}
+              thumbnail={thumbnail}
+              tech={tech}
+              links={links}
+              num={num}
+            />
+          );
+        })}
       </div>
     </section>
   );

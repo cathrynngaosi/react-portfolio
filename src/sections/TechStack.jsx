@@ -39,7 +39,7 @@ function TechStack({ techStackRef }) {
   return (
     <section id="tech-stack" ref={techStackRef}>
       <div
-        className="tech-container"
+        className="box-container"
         data-aos="fade-down"
         data-aos-duration="800"
       >
