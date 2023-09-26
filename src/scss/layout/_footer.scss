@@ -2,13 +2,14 @@
 
 #footer {
   background-color: $color-white;
-  font-size: smaller;
   font-weight: 200;
+  font-size: x-small;
   padding: 1rem;
 
   ul {
     @include flex-center;
     list-style-type: none;
+    padding: 0;
     margin: 0;
 
     li {
@@ -29,5 +30,9 @@
   svg {
     font-size: x-small;
     margin: 0 2px;
+  }
+
+  @include sm {
+    font-size: smaller;
   }
 }

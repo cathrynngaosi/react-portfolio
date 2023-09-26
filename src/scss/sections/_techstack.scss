@@ -29,6 +29,7 @@
   background-color: $color-white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+
   h1 {
     text-align: center;
   }
@@ -42,10 +43,10 @@
   .tech-container {
     text-align: center;
     flex: 1 0 calc(9% - 12px);
-    padding: 1.5rem;
+    padding: 1rem;
 
     .icon {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     .icon-label {
@@ -58,6 +59,11 @@
 
     @include md {
       flex: 0 0 calc(9% - 12px);
+      padding: 1.5rem;
+
+      .icon {
+        font-size: 3rem;
+      }
     }
   }
 }

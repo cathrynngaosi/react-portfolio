@@ -4,7 +4,7 @@ import { FiGithub, FiFigma } from "react-icons/fi";
 function Project({ title, description, tech, links, thumbnail, num }) {
   return (
     <div
-      className={`${num % 2 === 0 && "flex-reverse"} project-container`}
+      className={`${num % 2 === 0 ? "flex-reverse" : ""} project-container`}
       data-aos={num % 2 === 0 ? "fade-right" : "fade-left"}
       data-aos-duration="700"
     >

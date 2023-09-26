@@ -30,7 +30,7 @@ export const projects = [
   {
     title: "Popcorn Archives",
     description:
-      "Popcorn Archives allows users to search for different movies and series and add them to two list categories: favorites and bucket list. All data is fetched with the OMDB API",
+      "Popcorn Archives allows users to search for different movies and series and add them to two list categories: favorites and bucket list. All data is fetched with the OMDB API.",
     thumbnail: PACover,
     tech: ["React", "Tailwind CSS"],
     links: [

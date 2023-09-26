@@ -20,6 +20,7 @@
 
     div {
       @include flex-center;
+      flex-wrap: wrap;
       margin-top: 1rem;
     }
 
@@ -43,7 +44,7 @@
       text-decoration: none;
       font-family: "Montserrat", serif;
       cursor: pointer;
-      margin: 0 0.75rem;
+      margin: 0.75rem;
 
       &:hover {
         color: $color-primary-darker;
