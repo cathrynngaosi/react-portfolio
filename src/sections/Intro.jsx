@@ -22,7 +22,13 @@ function Intro() {
           <a href="mailto:cathrynngaosi@gmail.com">
             <button className="btn btn-secondary">Contact Me</button>
           </a>
-          <button className="btn btn-secondary">View Resume</button>
+          <a
+            href="https://drive.google.com/file/d/16AJ-dCjDBFJiBoOxgfu2t7dtO1bpXgCy/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-secondary">View Resume</button>
+          </a>
         </div>
         <div className="icons-container">
           <a
