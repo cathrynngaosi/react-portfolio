@@ -3,7 +3,7 @@
 .project-container {
   background-color: $color-white;
 
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   .project-img {
@@ -63,6 +63,8 @@
 
   @include lg {
     @include flex-center;
+    padding: 2rem;
+
     &.flex-reverse {
       flex-direction: row-reverse;
     }

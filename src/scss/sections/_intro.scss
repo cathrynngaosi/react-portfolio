@@ -25,6 +25,8 @@
 
     p {
       text-align: center;
+      line-height: 30px;
+      margin: 2rem 0;
     }
 
     button {
@@ -55,6 +57,9 @@
 
     @include lg {
       padding: 7rem;
+      p {
+        margin: 1rem 0;
+      }
     }
   }
 }
