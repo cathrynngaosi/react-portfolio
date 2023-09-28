@@ -1,3 +1,5 @@
+import ResumePhoto from "/public/Resume Photo.jpeg";
+
 function About({ aboutRef }) {
   return (
     <section id="about" ref={aboutRef}>
@@ -7,7 +9,7 @@ function About({ aboutRef }) {
         className="about-container"
       >
         <div className="about-photo">
-          <img src="public/ImagePlaceholder.png" alt="" />
+          <img src={ResumePhoto} alt="" />
         </div>
         <div className="about-text">
           <h1>ABOUT ME</h1>
