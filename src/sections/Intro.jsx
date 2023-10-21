@@ -11,8 +11,7 @@ function Intro() {
         <h1>Hey there, I&apos;m Cathryn!</h1>
         <p>
           I am an experienced developer based in the Philippines with a drive
-          for building (and occasionally designing) exceptional user
-          experiences.
+          for building and designing exceptional user experiences.
           <br />
           Currently, I&apos;m looking to grow further in my career as a Front
           End Developer 👩🏻‍💻 <br />

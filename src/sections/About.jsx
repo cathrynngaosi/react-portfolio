@@ -1,4 +1,4 @@
-import ResumePhoto from "/public/Resume Photo.jpeg";
+import ResumePhoto from "/public/DSC06388.jpeg";
 
 function About({ aboutRef }) {
   return (
@@ -18,18 +18,31 @@ function About({ aboutRef }) {
             to me, and that’s why I’m here ☀️
           </p>
           <p>
-            A bachelor’s degree in Information Technology and my years of
-            experience in the industry have enabled me to hone my skills in web
-            development, UI/UX design, and everything in between. Being able to
-            create beautiful websites has always been a goal of mine, and I’m
-            determined to grow and enhance my skills further.
+            I am an experienced developer with a track record of creating
+            beautiful and functional user experiences. I specialize in
+            technologies such as HTML, CSS, JavaScript, and have hands-on
+            experience with ReactJS, Redux, jQuery, PHP, C#, AWS Lambda, SQL,
+            Bootstrap, TailwindCSS, and Sass. In addition to coding, I have a
+            strong inclination for creating UI/UX designs, and I’m proficient in
+            tools like Figma. I’m committed to staying up to date with the
+            latest front-end development trends and practices, continuously
+            seeking opportunities for learning and growth.
           </p>
           <p>
-            When I&apos;m not glued to my laptop, you can find me in cafes,
-            crafting, or exploring new places to eat as an avid foodie. I love
-            exploring new places whenever I have the chance to travel, attending
-            live concerts, and making countless memories with my family (🐶
-            counted!) and friends.
+            My journey in the industry, coupled with a bachelor’s degree in
+            Information Technology, has enabled me to refine my skills in web
+            development, UI/UX design, and more. Crafting beautiful websites has
+            always been a personal goal, and I’m dedicated to further enhancing
+            my skills. I’m excited to connect with other professionals in the
+            industry and continue to learn and grow together.
+          </p>
+
+          <p>
+            When I’m not glued to my laptop, you can find me in cafes, crafting,
+            or exploring new places to eat as an avid foodie. I love exploring
+            new places whenever I have the chance to travel, attending live
+            concerts, and making countless memories with my family (🐶 counted!)
+            and friends.
           </p>
         </div>
       </div>
