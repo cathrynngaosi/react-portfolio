@@ -8,14 +8,15 @@ function Intro() {
         data-aos="fade-up"
         data-aos-duration="900"
       >
-        <h1>Hey there, I&apos;m Cathryn!</h1>
+        <h1>Hey there, I’m Cathryn!</h1>
         <p>
-          I am an experienced developer based in the Philippines with a drive
-          for building and designing exceptional user experiences.
+          I am an experienced developer based in the Philippines with a passion
+          for crafting elegant and efficient websites. I am now eagerly seeking
+          opportunities to advance my career by applying my proven development
+          skills to a web development role where I can contribute to the success
+          of impactful projects.
           <br />
-          Currently, I&apos;m looking to grow further in my career as a Front
-          End Developer 👩🏻‍💻 <br />
-          Let&apos;s connect!
+          Let’s connect!
         </p>
         <div>
           <a href="mailto:cathrynngaosi@gmail.com">
