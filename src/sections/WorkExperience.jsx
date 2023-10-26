@@ -1,3 +1,7 @@
+import Handoff from "/public/Handoff.png";
+import ECP from "/public/ECP.png";
+import DSDLink from "/public/DSDLink.png";
+
 function WorkExperience({ workExpRef }) {
   return (
     <section id="work-experience" ref={workExpRef}>
@@ -32,7 +36,20 @@ function WorkExperience({ workExpRef }) {
               </ul>
             </div>
             <div className="skills">
-              <p>HTML, CSS, JavaScript, C#, MySQL, AWS</p>
+              <p>HTML, CSS, JavaScript, C#, MySQL, AWS Lambda</p>
+            </div>
+            <div className="exp-desc">
+              <p>
+                Having been in Giant for 5 years, I have crafted and been heavy
+                involved in the development, testing, maintenance, and
+                improvements of web applications widely used by clients of
+                Encompass Technologies, DSDLink, and Handoff Technologies.
+              </p>
+              <div className="companies">
+                <img src={ECP} alt="" />
+                <img src={Handoff} alt="" />
+                <img src={DSDLink} alt="" />
+              </div>
             </div>
           </div>
 
@@ -54,6 +71,14 @@ function WorkExperience({ workExpRef }) {
             </div>
             <div className="skills">
               <p>HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQL</p>
+            </div>
+            <div className="exp-desc">
+              <p>
+                Beijing Bangnishuo, also known as Utalk Philippines, was an
+                online ESL company. With my time here, I have worked in the IT
+                department to design, develop, and test software applications
+                used by both students and teachers of the company.
+              </p>
             </div>
           </div>
         </div>

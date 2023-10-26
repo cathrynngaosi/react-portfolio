@@ -53,6 +53,34 @@
     }
   }
 
+  .exp-desc {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    p {
+      line-height: 1.6rem;
+      text-align: center;
+    }
+
+    .companies {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+
+      img {
+        height: 5rem;
+        padding: 1rem 2rem;
+      }
+
+      img:nth-child(3) {
+        height: 3rem;
+      }
+    }
+  }
+
   ul {
     list-style: none;
     padding: 0;
