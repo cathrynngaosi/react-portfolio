@@ -2,64 +2,161 @@
 @use "../components/index" as *;
 
 #intro {
-  position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -1px;
-    background: $color-primary;
-    height: 190px;
-    width: 100%;
-    clip-path: polygon(100% 2%, 39.25% 100%, 100% 100%);
+  margin-bottom: 2rem;
+
+  #name-header {
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: -1.5rem;
+    img {
+      width: 60%;
+    }
   }
 
   .intro-container {
-    @include flex-center;
-    flex-direction: column;
-    line-height: 1.5rem;
-    padding: 4rem 2rem 9rem;
+    margin-top: -2.3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 5rem;
 
-    h1 {
-      margin-bottom: 0;
+    img {
+      width: 25rem;
+      top: 2.3rem;
+      left: 2rem;
+      z-index: 2;
+      position: relative;
     }
 
-    p {
-      text-align: center;
-      line-height: 30px;
-      margin: 2rem 0;
-    }
+    .intro-content {
+      width: 45%;
+      padding: 3rem 4rem 6rem 6rem;
+      background: $color-primary;
 
-    button {
-      margin: 0 0.2rem;
-    }
-
-    .icons-container {
-      margin-top: 1rem;
-      font-size: 1.8rem;
-
-      span {
-        cursor: pointer;
-        margin: 0 2px;
+      h1 {
+        margin-top: 0;
+        font-family: $font-dmserif;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        font-style: italic;
       }
-      svg {
-        color: $color-secondary;
-        transition: all 0.25s ease;
 
-        &:visited {
-          color: $color-secondary;
-        }
-
-        &:hover {
-          color: $color-primary-darker;
-        }
-      }
-    }
-
-    @include lg {
-      padding: 7rem;
       p {
-        margin: 1rem 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+        text-align: justify;
+        border-left: 2px solid $color-primary-darker;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .intro-links {
+        @include flex-center;
+        margin-top: 1.5rem;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: bolder;
+          color: $color-secondary;
+          margin-right: 1rem;
+
+          &:hover {
+            color: $color-primary-darker;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
 }
+
+// #intro {
+//   // background-color: #e9dad780;
+//   position: relative;
+//   margin: 4rem;
+//   margin-top: 0;
+//   // &::after {
+//   //   position: absolute;
+//   //   content: "";
+//   //   bottom: -1px;
+//   //   background: $color-primary;
+//   //   height: 190px;
+//   //   width: 100%;
+//   //   clip-path: polygon(100% 2%, 39.25% 100%, 100% 100%);
+//   // }
+//   #name-header {
+//     text-align: center;
+
+//     z-index: 5;
+
+//     img {
+//       width: 60%;
+//     }
+//   }
+
+//   .intro-container {
+//     // @include flex-center;
+//     // margin: 0rem 3rem;
+//     // line-height: 1.5rem;
+
+//     // h1 {
+//     //   margin-bottom: 0;
+//     //   font-size: 1rem;
+//     //   text-transform: uppercase;
+//     //   padding: 0.5rem;
+//     //   color: $color-secondary;
+//     //   width: fit-content;
+//     // }
+
+//     // p {
+//     //   text-align: justify;
+//     //   line-height: 30px;
+//     //   margin: 2rem 0;
+//     // }
+
+//     .intro-photo {
+//       flex: 0 0 35%;
+
+//       img {
+//         width: 100%;
+//       }
+//     }
+
+//     .intro-content {
+//       flex: 0 0 1;
+//     }
+
+//     button {
+//       margin: 0 0.2rem;
+//     }
+
+//     .icons-container {
+//       margin-top: 1rem;
+//       font-size: 1.8rem;
+
+//       span {
+//         cursor: pointer;
+//         margin: 0 2px;
+//       }
+//       svg {
+//         color: $color-secondary;
+//         transition: all 0.25s ease;
+
+//         &:visited {
+//           color: $color-secondary;
+//         }
+
+//         &:hover {
+//           color: $color-primary-darker;
+//         }
+//       }
+//     }
+
+//     @include lg {
+//       p {
+//         margin: 1rem 0;
+//       }
+//     }
+//   }
+// }

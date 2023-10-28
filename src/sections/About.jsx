@@ -1,5 +1,3 @@
-import ResumePhoto from "/public/DSC06388.jpeg";
-
 function About({ aboutRef }) {
   return (
     <section id="about" ref={aboutRef}>
@@ -8,33 +6,22 @@ function About({ aboutRef }) {
         data-aos-duration="900"
         className="about-container"
       >
-        <div className="about-photo">
-          <img src={ResumePhoto} alt="" />
-        </div>
         <div className="about-text">
           <h1>ABOUT ME</h1>
           <p className="about-intro">
             The idea of creating something from nothing has always been exciting
             to me, and that’s why I’m here ☀️
           </p>
+
           <p>
             I am an experienced developer with a track record of creating
-            beautiful and functional user experiences. I specialize in
-            technologies such as HTML, CSS, JavaScript, and have hands-on
-            experience with ReactJS, Redux, jQuery, PHP, C#, AWS Lambda, SQL,
-            Bootstrap, TailwindCSS, and Sass. In addition to coding, I have a
-            strong inclination for creating UI/UX designs, and I’m proficient in
-            tools like Figma. I’m committed to staying up to date with the
-            latest front-end development trends and practices, continuously
-            seeking opportunities for learning and growth.
-          </p>
-          <p>
-            My journey in the industry, coupled with a bachelor’s degree in
-            Information Technology, has enabled me to refine my skills in web
-            development, UI/UX design, and more. Crafting beautiful websites has
-            always been a personal goal, and I’m dedicated to further enhancing
-            my skills. I’m excited to connect with other professionals in the
-            industry and continue to learn and grow together.
+            beautiful and functional user experiences. My journey in the
+            industry, coupled with a bachelor’s degree in Information
+            Technology, has enabled me to refine my skills in web development,
+            UI/UX design, and more. Crafting beautiful websites has always been
+            a personal goal, and I’m dedicated to further enhancing my skills.
+            I’m excited to connect with other professionals in the industry and
+            continue to learn and grow together.
           </p>
 
           <p>
