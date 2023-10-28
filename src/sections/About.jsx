@@ -1,18 +1,18 @@
+import IDPhoto from "/public/ID Photo.jpg";
+
 function About({ aboutRef }) {
   return (
     <section id="about" ref={aboutRef}>
-      <div
-        data-aos="fade-left"
-        data-aos-duration="900"
-        className="about-container"
-      >
-        <div className="about-text">
-          <h1>ABOUT ME</h1>
-          <p className="about-intro">
-            The idea of creating something from nothing has always been exciting
-            to me, and that’s why I’m here ☀️
-          </p>
+      <div className="about-intro">
+        <p>
+          the idea of creating something from nothing has always been exciting
+          to me, and that’s why I’m here ☀️
+        </p>
+      </div>
 
+      <div className="about-container">
+        <div className="about-text">
+          <h1>About Me</h1>
           <p>
             I am an experienced developer with a track record of creating
             beautiful and functional user experiences. My journey in the
@@ -20,8 +20,6 @@ function About({ aboutRef }) {
             Technology, has enabled me to refine my skills in web development,
             UI/UX design, and more. Crafting beautiful websites has always been
             a personal goal, and I’m dedicated to further enhancing my skills.
-            I’m excited to connect with other professionals in the industry and
-            continue to learn and grow together.
           </p>
 
           <p>
@@ -31,6 +29,9 @@ function About({ aboutRef }) {
             concerts, and making countless memories with my family (🐶 counted!)
             and friends.
           </p>
+        </div>
+        <div className="about-photo">
+          <img src={IDPhoto} alt="header" />
         </div>
       </div>
     </section>

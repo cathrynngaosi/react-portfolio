@@ -6,7 +6,7 @@
 
   #name-header {
     text-align: center;
-    margin-bottom: 0px;
+    margin: 0px;
     position: relative;
     bottom: -1.5rem;
     img {
@@ -53,6 +53,7 @@
 
       .intro-links {
         @include flex-center;
+        justify-content: space-around;
         margin-top: 1.5rem;
         a {
           text-decoration: none;

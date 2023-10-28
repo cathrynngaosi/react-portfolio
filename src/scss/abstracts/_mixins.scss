@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+@mixin dmsans-header {
+  font-family: $font-dmserif;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
 @mixin li-styles {
   margin: 0 0.5rem;
   list-style-type: none;

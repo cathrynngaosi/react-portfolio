@@ -2,55 +2,51 @@
 
 #about {
   background-color: $color-primary;
+}
 
-  // position: relative;
-  // &::before {
-  //   clip-path: polygon(0 0%, -9% -2%, 107% -102%, -10% 75%, -8% 147%);
-  //   background: white;
-  //   z-index: 1;
-  //   top: 0;
-  //   position: absolute;
-  //   content: "";
-  //   height: 190px;
-  //   width: 100%;
-  // }
+.about-intro {
+  background: #fcfaf8;
+  padding: 2rem;
+  color: #290101;
+  line-height: 2.5rem;
+  @include dmsans-header;
+  font-size: 1.3rem;
+  text-align: center;
+
+  p {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 .about-container {
-  @include flex-center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 2rem 3rem;
+  position: relative;
 
   h1 {
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
 
   .about-photo {
-    padding-top: 2rem;
-    flex: 0 0 45%;
-
     img {
-      width: 75%;
-      padding: 0.15rem;
-      background: $color-primary;
-      box-shadow: 0 0 20px #0000001a;
+      width: 20rem;
     }
   }
 
   .about-text {
-    flex: 1;
     line-height: 1.6rem;
+    width: 60%;
 
-    .about-intro {
-      font-size: smaller;
-      font-style: italic;
-      margin: 0;
-      text-align: center;
-    }
     p {
       letter-spacing: 0.01rem;
     }
+
     .icons-container {
       margin-top: 1rem;
       font-size: 1.8rem;
