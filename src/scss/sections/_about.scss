@@ -14,8 +14,14 @@
   text-align: center;
 
   p {
-    width: 50%;
     margin: auto;
+    width: 100%;
+  }
+
+  @include lg {
+    p {
+      width: 50%;
+    }
   }
 }
 
@@ -40,11 +46,12 @@
   }
 
   .about-text {
-    line-height: 1.6rem;
-    width: 60%;
+    line-height: 2rem;
 
     p {
       letter-spacing: 0.01rem;
+      font-weight: 300;
+      font-size: 1.1rem;
     }
 
     .icons-container {
@@ -60,6 +67,10 @@
 
   @include lg {
     flex-direction: row;
-    padding: 5rem 5rem 3rem;
+    padding: 3rem;
+
+    .about-text {
+      width: 60%;
+    }
   }
 }

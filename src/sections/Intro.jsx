@@ -8,7 +8,7 @@ function Intro() {
         <img src={NameHeader} alt="header" />
       </h1>
       <div className="intro-container">
-        <div>
+        <div className="intro-photo">
           <img src={DisplayPhoto} alt="" />
         </div>
         <div className="intro-content">

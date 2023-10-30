@@ -16,7 +16,7 @@ function WorkExperience({ workExpRef }) {
         <div className="section-content">
           <div className="exp-container">
             <div className="company">
-              <h3>Giant International Software Station Inc.</h3>
+              <h2>Giant International Software Station Inc.</h2>
               <p>May 2018 - May 2023 </p>
             </div>
             <div className="exp-positions">
@@ -35,9 +35,7 @@ function WorkExperience({ workExpRef }) {
                 </li>
               </ul>
             </div>
-            <div className="skills">
-              <p>HTML, CSS, JavaScript, C#, MySQL, AWS Lambda</p>
-            </div>
+
             <div className="exp-desc">
               <p>
                 Having been in Giant for 5 years, I have crafted and been heavy
@@ -55,10 +53,10 @@ function WorkExperience({ workExpRef }) {
 
           <div className="exp-container">
             <div className="company">
-              <h3>
+              <h2>
                 Beijing Bangnishuo Internet Education Technology Limited -
                 Philippines
-              </h3>
+              </h2>
               <p>July 2017 - May 2018</p>
             </div>
             <div className="exp-positions">
@@ -69,9 +67,7 @@ function WorkExperience({ workExpRef }) {
                 </li>
               </ul>
             </div>
-            <div className="skills">
-              <p>HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQL</p>
-            </div>
+
             <div className="exp-desc">
               <p>
                 Beijing Bangnishuo, also known as Utalk Philippines, was an
