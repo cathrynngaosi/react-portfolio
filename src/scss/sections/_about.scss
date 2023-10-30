@@ -4,27 +4,6 @@
   background-color: $color-primary;
 }
 
-.about-intro {
-  background: #fcfaf8;
-  padding: 2rem;
-  color: #290101;
-  line-height: 2.5rem;
-  @include dmsans-header;
-  font-size: 1.3rem;
-  text-align: center;
-
-  p {
-    margin: auto;
-    width: 100%;
-  }
-
-  @include lg {
-    p {
-      width: 50%;
-    }
-  }
-}
-
 .about-container {
   display: flex;
   justify-content: space-around;

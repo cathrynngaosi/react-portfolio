@@ -3,14 +3,12 @@ import IDPhoto from "/public/ID Photo.jpg";
 function About({ aboutRef }) {
   return (
     <section id="about" ref={aboutRef}>
-      <div className="about-intro">
-        <p>
-          the idea of creating something from nothing has always been exciting
-          to me, and that’s why I’m here ☀️
-        </p>
-      </div>
-
-      <div className="about-container">
+      <div
+        className="about-container"
+        data-aos="fade-left"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="about-text">
           <h1>About Me</h1>
           <p>

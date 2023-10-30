@@ -79,19 +79,43 @@
       }
     }
   }
+  .quote-intro {
+    background: #fcfaf8;
+    padding: 2rem;
+    color: #290101;
+    line-height: 2.5rem;
+    @include dmsans-header;
+    font-size: 1.3rem;
+    text-align: center;
+
+    p {
+      margin: auto;
+      width: 100%;
+    }
+
+    @include lg {
+      p {
+        width: 50%;
+      }
+    }
+  }
 
   @include lg {
-    margin-bottom: 2rem;
-
+    #name-header {
+      bottom: 0;
+    }
     .intro-container {
       flex-direction: row;
       padding: 1rem 2rem;
+      position: relative;
+      top: -2rem;
+      z-index: -1;
 
       .intro-photo {
         text-align: unset;
 
         img {
-          width: 25rem;
+          width: 23rem;
           left: 2rem;
           z-index: 2;
         }
@@ -99,7 +123,7 @@
 
       .intro-content {
         width: 45%;
-        padding: 3rem 4rem 6rem 6rem;
+        padding: 3rem 4rem 5rem 6rem;
         h1 {
           text-align: left;
           font-size: 2rem;
@@ -115,93 +139,3 @@
     }
   }
 }
-
-// #intro {
-//   // background-color: #e9dad780;
-//   position: relative;
-//   margin: 4rem;
-//   margin-top: 0;
-//   // &::after {
-//   //   position: absolute;
-//   //   content: "";
-//   //   bottom: -1px;
-//   //   background: $color-primary;
-//   //   height: 190px;
-//   //   width: 100%;
-//   //   clip-path: polygon(100% 2%, 39.25% 100%, 100% 100%);
-//   // }
-//   #name-header {
-//     text-align: center;
-
-//     z-index: 5;
-
-//     img {
-//       width: 60%;
-//     }
-//   }
-
-//   .intro-container {
-//     // @include flex-center;
-//     // margin: 0rem 3rem;
-//     // line-height: 1.5rem;
-
-//     // h1 {
-//     //   margin-bottom: 0;
-//     //   font-size: 1rem;
-//     //   text-transform: uppercase;
-//     //   padding: 0.5rem;
-//     //   color: $color-secondary;
-//     //   width: fit-content;
-//     // }
-
-//     // p {
-//     //   text-align: justify;
-//     //   line-height: 30px;
-//     //   margin: 2rem 0;
-//     // }
-
-//     .intro-photo {
-//       flex: 0 0 35%;
-
-//       img {
-//         width: 100%;
-//       }
-//     }
-
-//     .intro-content {
-//       flex: 0 0 1;
-//     }
-
-//     button {
-//       margin: 0 0.2rem;
-//     }
-
-//     .icons-container {
-//       margin-top: 1rem;
-//       font-size: 1.8rem;
-
-//       span {
-//         cursor: pointer;
-//         margin: 0 2px;
-//       }
-//       svg {
-//         color: $color-secondary;
-//         transition: all 0.25s ease;
-
-//         &:visited {
-//           color: $color-secondary;
-//         }
-
-//         &:hover {
-//           color: $color-primary-darker;
-//         }
-//       }
-//     }
-
-//     @include lg {
-//       p {
-//         margin: 1rem 0;
-//       }
-//     }
-//   }
-// }
