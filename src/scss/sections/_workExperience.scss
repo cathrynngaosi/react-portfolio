@@ -79,7 +79,7 @@
       }
 
       img:nth-child(3) {
-        height: 3rem;
+        height: unset;
       }
 
       @include lg {
@@ -88,6 +88,9 @@
           height: 5rem;
           width: unset;
           padding: 1rem 2rem;
+        }
+        img:nth-child(3) {
+          height: 3rem;
         }
       }
     }
